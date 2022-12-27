@@ -5,6 +5,7 @@ import { BuscarComponent } from './page/buscar/buscar.component';
 import { HomeComponent } from './page/home/home.component';
 import { ListadoComponent } from './page/listado/listado.component';
 import { HeroeRoutingModule } from './heroe-routing.module';
+import { MaterialModule } from '../material/material.module';
 
 
 
@@ -17,7 +18,8 @@ import { HeroeRoutingModule } from './heroe-routing.module';
   ],
   imports: [
     CommonModule,
-    HeroeRoutingModule
+    HeroeRoutingModule,
+    MaterialModule
   ]
 })
 export class HeroeModule { }
