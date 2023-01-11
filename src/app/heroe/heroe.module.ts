@@ -6,7 +6,9 @@ import { HomeComponent } from './page/home/home.component';
 import { ListadoComponent } from './page/listado/listado.component';
 import { HeroeRoutingModule } from './heroe-routing.module';
 import { MaterialModule } from '../material/material.module';
-
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
+import { ImagenPipe } from './pipes/imagen.pipe';
 
 
 @NgModule({
@@ -14,12 +16,15 @@ import { MaterialModule } from '../material/material.module';
     AgregarComponent,
     BuscarComponent,
     HomeComponent,
-    ListadoComponent
+    ListadoComponent,
+    HeroeTarjetaComponent,
+    ImagenPipe
   ],
   imports: [
     CommonModule,
     HeroeRoutingModule,
-    MaterialModule
+    MaterialModule,
+    FlexLayoutModule
   ]
 })
 export class HeroeModule { }

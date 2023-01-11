@@ -21,8 +21,16 @@ const routes : Routes = [
         component: AgregarComponent
       },
       {
+        path: 'editar/:id',
+        component: AgregarComponent
+      },
+      {
         path: 'buscar',
         component: BuscarComponent
+      },
+      {
+        path: ':id',
+        component: HeroeComponent
       },
       {
         path: '**',
